@@ -221,7 +221,7 @@ for stub_path in stub_paths:
     # Replace directives
     for sphinx_directive, replacement in SPHINX_DIRECTIVES_REPLACE_MAP.items():
         unparsed_cleaned = re.sub(
-            pattern=f"\.\. {sphinx_directive}::\s*",
+            pattern=rf"\.\. {sphinx_directive}::\s*",
             repl=f"{replacement} ",
             string=unparsed_cleaned,
         )
