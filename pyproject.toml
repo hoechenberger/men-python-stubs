@@ -12,7 +12,7 @@ license = "BSD-3-Clause"
 readme = "README.md"
 classifiers = ["Typing :: Stubs Only"]
 requires-python = ">=3.11"
-dependencies = ["mne==1.7.*"]
+dependencies = ["mne>=1.7.0,<1.9.0"]
 dynamic = ["version"]
 
 [project.optional-dependencies]
